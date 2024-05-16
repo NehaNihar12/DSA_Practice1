@@ -2,9 +2,10 @@ package org.example.arrays;
 
 public class Sorted {
     public static void main(String[] args){
-        System.out.println("Hi");
-        boolean a = isSorted(new int[]{1, 2, 8, 4, 5},0);
-        System.out.println(linSearch(new int[]{1, 2, 8, 4, 5},8,0));
+//        System.out.println("Hi");
+//        boolean a = isSorted(new int[]{1, 2, 8, 4, 5},0);
+//        System.out.println(linSearch(new int[]{1, 2, 8, 4, 5},8,0));
+        printNum(5);
 
     }
 
@@ -27,4 +28,14 @@ public class Sorted {
         }
         return linSearch(arr, target,i+1);
     }
+
+    public static void printNum(int N){
+        if(N<1){
+            return;
+        }
+        printNum(N-1);
+        System.out.println(N);
+
+    }
+
 }

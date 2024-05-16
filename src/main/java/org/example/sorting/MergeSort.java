@@ -6,7 +6,7 @@ public class MergeSort {
     public static void main(String[] args){
         int[] arr = {4,3,7,6,1,2};
 //        System.out.println(Arrays.toString(mergeSort(arr)));
-        mergeSort(arr,0,arr.length);  // O(N): NlogN
+//        mergeSort(arr,0,arr.length);  // O(N): NlogN
         InplaceMergeSort(arr,0,arr.length-1); //O(N): N(logN)^2
         System.out.println(Arrays.toString(arr));
 
